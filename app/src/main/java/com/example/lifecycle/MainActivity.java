@@ -40,19 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        //Toast.makeText(this, "create", Toast.LENGTH_SHORT).show();
-        binding.cb.isChecked();
-        binding.rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (R.id.rb1 == checkedId) {
-                    binding.tv.setText("МОЛОДЕЦ!");
-                }
-                if (R.id.rb2 == checkedId){
-                    binding.tv.setText("ПРЕЗИДЕНТ МИРА!");
-                }
-            }
-        });
+
 
     }
 

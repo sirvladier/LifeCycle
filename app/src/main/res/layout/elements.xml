@@ -7,52 +7,32 @@
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="ТЕКСТ"
+        android:text="Cool Market"
+        android:textColor="@color/green"
         android:gravity="center"
         android:textSize="25sp">
 
-
     </TextView>
-
-    <Button
-        android:id="@+id/but"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="РОССИЯ?">
-    </Button>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:buttonTint="@color/red"
+                android:text="Кофемолка"
+                android:textColor="@color/red"
 
-    <EditText
-        android:id="@+id/et"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="НАВСЕГДА">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
 
-    </EditText>
-    <CheckBox
-        android:id="@+id/cb"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="ZA?">
-
-    </CheckBox>
-<RadioGroup
-    android:id="@+id/rg"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RadioButton
-        android:id="@+id/rb1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Владимир">
-
-    </RadioButton>
-    <RadioButton
-        android:id="@+id/rb2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Путин">
-
-    </RadioButton>
-
-</RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
