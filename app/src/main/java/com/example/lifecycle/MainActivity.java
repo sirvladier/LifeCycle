@@ -7,6 +7,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.lifecycle.databinding.ElementsBinding;
@@ -39,9 +40,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        
-
         //Toast.makeText(this, "create", Toast.LENGTH_SHORT).show();
+        binding.cb.isChecked();
+        binding.rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (R.id.rb1 == checkedId) {
+                    binding.tv.setText("МОЛОДЕЦ!");
+                }
+                if (R.id.rb2 == checkedId){
+                    binding.tv.setText("ПРЕЗИДЕНТ МИРА!");
+                }
+            }
+        });
 
     }
 
